@@ -15,7 +15,7 @@ public class EmailService {
         return instance;
     }
 
-    boolean sendEmail(Order order) {
+    void sendEmail(Order order) {
         order.setCustomerNotified(false);
         throw new RuntimeException("An Exception Occurred");
     }

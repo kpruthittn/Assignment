@@ -18,7 +18,7 @@ public class OrderServiceTest {
     @Test(expected = Exception.class)
     public void test1(){
         Order o = new Order(5,"Food",100);
-        assertEquals(20,OrderService.getInstance().placeOrder(o));
+        OrderService.getInstance().placeOrder(o);
     }
     @Test
     public void test2(){

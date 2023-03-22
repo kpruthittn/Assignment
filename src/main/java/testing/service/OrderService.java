@@ -17,12 +17,11 @@ public class OrderService {
         emailService = EmailService.getInstance();
     }
 
-    double placeOrder(Order order) {
+    void placeOrder(Order order) {
         double priceWithTax = order.getPrice() * 20 / 100;
         order.setPriceWithTax(priceWithTax);
         emailService.sendEmail(order);
         order.setCustomerNotified(true);
-        return priceWithTax;
     }
 
     boolean placeOrder(Order order, String cc) {

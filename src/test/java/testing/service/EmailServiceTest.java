@@ -18,7 +18,7 @@ public class EmailServiceTest {
     @Test(expected = Exception.class)
     public void test1() throws Exception{
         Order o = new Order(5,"Food",25.8);
-        assertFalse(EmailService.getInstance().sendEmail(o));
+        EmailService.getInstance().sendEmail(o);
     }
     @Test
     public void test2(){
