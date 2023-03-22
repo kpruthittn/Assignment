@@ -30,8 +30,10 @@ public class OrderServiceTest {
         System.out.println("After");
     }
 
-    @AfterClass
-    public static void testAfterClass() throws Exception {
-        System.out.println("After Class");
-    }
+//    @AfterClass
+//    public static void testAfterClass() throws Exception {
+//        System.out.println("After Class");
+//        System.out.println("After Class");
+//        System.out.println("After Class");
+//    }
 }
